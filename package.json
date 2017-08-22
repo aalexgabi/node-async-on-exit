@@ -1,0 +1,14 @@
+{
+  "name": "async-on-exit",
+  "version": "0.0.0",
+  "description": "Provides a way to execute asynchronous operations before exiting",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aalexgabi/node-async-on-exit"
+  },
+  "main": "lib/async-on-exit.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "license": "UNLICENSE"
+}
