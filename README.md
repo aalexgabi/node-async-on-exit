@@ -11,7 +11,7 @@ It works by **overwriting and proxyfying `process.exit()`** method. You can alwa
 ## Reference
 
 ### asyncOnExit(Function listener, Boolean attachSignalListeners)
-* listener: the promise returning function to execute when process.exit is called
+* listener: function to execute when `process.exit()` is called. If function returns a promise, the process exit will be delayed until the promise is fulfilled
 * attachSignalListeners: whether to also handle SIGINT and SIGTERM signals
 
   **NOTE: This will attach an event listener on SIGINT and SIGTERM that will delay exiting process until promise returned by listener fails or succeeds and exits node afterward. There is no way to cancel process exit unless you never resolve or reject the listener promise. In a future version a mechanism for cancelling exit will be added**
