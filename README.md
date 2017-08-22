@@ -2,7 +2,7 @@
 
 ## Description
 
-This module allows executing async operations before exiting node process.
+Provides a way to execute asynchronous operations before exiting.
 
 ## How it works
 
