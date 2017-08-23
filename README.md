@@ -22,7 +22,7 @@ Restores original process.exit and remove attached signal listeners in case you 
 ## Examples
 
 Usage:
-```
+```js
 var asyncOnExit = require('async-on-exit')
 
 asyncOnExit(function () {
@@ -55,7 +55,7 @@ setTimeout(function () {
 ```
 
 Disposing:
-```
+```js
 var asyncOnExit = require('async-on-exit')
 
 asyncOnExit(function () {
